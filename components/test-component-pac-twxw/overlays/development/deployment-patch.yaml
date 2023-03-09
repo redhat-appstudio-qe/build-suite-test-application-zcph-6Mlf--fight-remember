@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-pac-twxw
+  namespace: build-e2e-pbus-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:de5e869a68c7f47870eb1397061943e7f828ac7eb457d2998dfc41bcdb6c94bf
+        name: container-image
+        resources: {}
+status: {}
