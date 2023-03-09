@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: test-component-pac-twxw
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:de5e869a68c7f47870eb1397061943e7f828ac7eb457d2998dfc41bcdb6c94bf
         imagePullPolicy: Always
         name: container-image
         resources:
